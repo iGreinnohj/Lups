@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#09091c">
 <title>Para pequeña Naksu ✨</title>
 <style>
@@ -68,6 +68,52 @@ h1 span.gl{background:linear-gradient(90deg,#f6d78b,#ffb36b,#f6d78b);background-
 .off .smoke{animation:smk 2s ease-out}@keyframes smk{from{opacity:.8;transform:translateY(0)}to{opacity:0;transform:translateY(-60px) scale(5)}}
 .message{opacity:0;transform:translateY(20px);transition:1s}.message.show{opacity:1;transform:none}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--sans:'Jost','Helvetica Neue',Arial,sans-serif;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{font-family:var(--serif);font-size:19px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.kicker{font-family:var(--sans);font-weight:400;font-size:11px;letter-spacing:.38em;display:flex;align-items:center;justify-content:center;gap:14px}
+.kicker:before,.kicker:after{content:"";width:clamp(18px,8vw,54px);height:1px;background:linear-gradient(90deg,transparent,#8bdcffaa)}
+.kicker:after{transform:scaleX(-1)}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,10vw,88px);line-height:1.04;letter-spacing:-.01em;margin:20px 0 16px}
+h1 span.gl{font-style:italic;font-weight:600;padding:0 .08em .08em}
+.sub{font-family:var(--serif);font-style:italic;font-size:clamp(18px,3.6vw,22px);line-height:1.6;color:#e3ddf6}
+button{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:15px 30px;border:1px solid #f6d78bbb;background:linear-gradient(120deg,#4b3a7ccc,#1f4568cc);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 0 0 1px #ffffff0d inset,0 8px 30px #6b5cff33}
+button:hover{box-shadow:0 0 0 1px #ffffff1a inset,0 10px 38px #8bdcff55;border-color:#f6d78b}
+button:active{transform:translateY(0) scale(.98)}
+button:focus-visible,.photo:focus-visible,.cake-wrap:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.cake-caption{font-family:var(--serif);font-style:italic;font-size:19px;letter-spacing:.04em}
+.photo{font-family:var(--sans);font-size:11px;letter-spacing:.08em;border:2px solid #f6d78bcc;box-shadow:0 0 0 5px #f6d78b14,0 0 28px #9bdfff55}
+.photo:hover{box-shadow:0 0 0 6px #f6d78b22,0 0 38px #9bdfffaa}
+.hint{font-family:var(--sans);font-weight:300;font-size:12px;letter-spacing:.12em;color:#cfc8ea}
+.message{padding:34px 28px;border:1px solid #f6d78b44;border-radius:26px;background:linear-gradient(160deg,#1a1d3bcc,#0f1229cc);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 20px 60px #00000066,0 0 40px #7f76d222}
+.message h2{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(32px,6vw,42px);margin:0 0 14px}
+.message h2:after{content:"";display:block;width:56px;height:1px;margin:14px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.message p{font-size:clamp(18px,3.4vw,21px);line-height:1.75;color:#ece7f8}
+footer{font-family:var(--sans);font-weight:300;letter-spacing:.14em;font-size:11px}
+main{padding:max(32px,env(safe-area-inset-top,0px)) 16px 32px}
+#intro,#universe{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+#intro h1{text-shadow:0 0 40px #8bcfff55}
+@media(max-width:520px){body{font-size:17px}.kicker{letter-spacing:.26em;font-size:10px}button{padding:14px 24px}.cake-caption{font-size:16px}}
+.giftbtn{font-size:13px;padding:17px 36px;background:linear-gradient(120deg,#f6d78b,#ffb36b);color:#2a1d12;border-color:#fff3d0;box-shadow:0 0 34px #ffcb6a66;animation:pulse 2.4s ease-in-out infinite}
+.giftbtn:hover{box-shadow:0 0 46px #ffcb6aaa}
+@keyframes pulse{50%{box-shadow:0 0 52px #ffcb6a99}}
+.giftmodal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:max(20px,env(safe-area-inset-top,0px)) 16px max(20px,env(safe-area-inset-bottom,0px));background:#04051088;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);overflow-y:auto}
+.giftmodal.open{display:flex;animation:rise .5s both}
+.giftcard{width:min(560px,100%);max-height:100%;overflow-y:auto;text-align:center;padding:34px 26px 30px;border:1px solid #f6d78b66;border-radius:28px;background:linear-gradient(160deg,#211f48f2,#0e1128f2);box-shadow:0 24px 80px #000a,0 0 50px #f6d78b22}
+.giftcard h2{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(32px,7vw,44px);color:var(--gold);margin:14px 0 16px}
+.giftcard p{font-size:clamp(18px,3.5vw,21px);line-height:1.7;color:#ece7f8;margin:0 0 16px}
+.giftcard .when{color:#fff;padding:14px 16px;border-radius:16px;background:#f6d78b14;border:1px solid #f6d78b33}
+.giftcard b{color:var(--gold);font-weight:600}
+.steps{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 10px;margin:4px 0 20px;font-family:var(--sans);font-size:13px;letter-spacing:.04em}
+.steps span{padding:8px 14px;border-radius:999px;border:1px solid #8bdcff55;background:#8bdcff12}
+.steps i{font-style:normal;color:var(--gold)}
+.giftcard .free{font-style:italic;color:#cfc8ea;font-size:clamp(17px,3.3vw,19px);margin-bottom:22px}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
 </head>
 <body>
 <div id="sky"></div><div class="stars" id="stars"></div>
@@ -96,7 +142,9 @@ h1 span.gl{background:linear-gradient(90deg,#f6d78b,#ffb36b,#f6d78b);background-
 <p class="hint">Toca cualquier círculo para cambiar su imagen. 🍕</p>
 <input id="filePicker" type="file" accept="image/*">
 <div class="message"><h2>Un deseo para ti ✨</h2><p>Espero que hoy sonrías muchísimo, que la vida te sorprenda bonito y que nunca te falten razones para seguir brillando. Gracias por compartir un poquito de tu mundo. ¡Que tengas un cumpleaños increíble!</p></div>
+<div class="actions"><button id="gift" class="giftbtn">🎁 Reclamar mi regalo</button></div>
 <div class="actions"><button id="change">✧ Cambiar fotografías</button><button id="back">Volver al comienzo</button></div>
+<div class="giftmodal" id="giftmodal" aria-hidden="true"><div class="giftcard" role="dialog" aria-labelledby="gt"><div class="kicker">Una promesa cumplida</div><h2 id="gt">Tu regalo te espera 🎁</h2><p>Cumpliendo con mi palabra, te hago una invitación: si quieres, podemos salir al cine o a comer algo y conversar, y después ir a comprar tu libro.</p><div class="steps"><span>🎬 Cine</span><i>o</i><span>🍽️ Comer algo</span><i>→</i><span>📖 Tu libro</span></div><p>No lo hago con otras intenciones ni nada, solo es para darte tu regalo en tu día, sin más.</p><p class="when">Si aceptas, podría ser <b>hoy lunes 9 de noviembre</b>, saliendo yo de la U a las <b>6:15</b>, o el <b>próximo lunes 16 de noviembre</b>, que es el único día que descanso.</p><p class="free">Y si no quieres, eres totalmente libre de no aceptar. No es obligatorio responder ni nada, de verdad.</p><button id="giftclose">Cerrar</button></div></div>
 <footer>Hecho con cariño, bajo el mismo cielo estrellado.</footer>
 </section>
 </div></main>
@@ -120,5 +168,14 @@ const picker=document.getElementById('filePicker');
 document.querySelectorAll('.photo').forEach(el=>el.addEventListener('click',()=>{active=el;picker.click()}));
 document.getElementById('change').onclick=()=>{active=document.querySelector('.photo');picker.click()};
 picker.addEventListener('change',()=>{const file=picker.files[0];if(!file||!active)return;const reader=new FileReader();reader.onload=e=>{let img=active.querySelector('img');if(!img){img=document.createElement('img');active.appendChild(img)}img.src=e.target.result;const span=active.querySelector('span');if(span)span.style.display='none'};reader.readAsDataURL(file);picker.value=''});
+document.querySelectorAll('.photo,.cake-wrap').forEach(el=>{el.tabIndex=0;el.setAttribute('role','button');el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click()}})});
+</script>
+<script>
+(function(){const m=document.getElementById('giftmodal'),o=document.getElementById('gift'),c=document.getElementById('giftclose');
+function open(){m.classList.add('open');m.setAttribute('aria-hidden','false');if(typeof rain==='function')rain(20);c.focus()}
+function close(){m.classList.remove('open');m.setAttribute('aria-hidden','true');o.focus()}
+o.addEventListener('click',open);c.addEventListener('click',close);
+m.addEventListener('click',e=>{if(e.target===m)close()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('open'))close()})})();
 </script>
 </body></html>
